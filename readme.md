@@ -52,6 +52,8 @@ $ rollodeqc-gh-members --help
     ponies & rainbows
 ```
 
+## Support
+Please file an issue or try to reach us on irc in the #rollodeqc channel on the Freenode network.
 
 ## License
 AGPL-v3 © [Robin Millette](http://robin.millette.info)
