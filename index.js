@@ -29,6 +29,7 @@ const utils = require('rollodeqc-gh-utils')
 // npm
 const ghGot = require('gh-got')
 const omitBy = require('lodash.omitby')
+const RateLimit = require('rate-limit-promise')
 
 const fetchMembers = function (user) {
   return user.public_members_headers ? Promise.resolve(user)
@@ -48,6 +49,10 @@ module.exports = function (query, cache) {
   if (typeof query === 'string') { query = { o: { string: query } } }
   query.o.type = 'org'
 
-  return fetchUsers(query, cache)
-    .then((users) => Promise.all(users.map((user) => fetchMembers(user))))
+  return utils.rateLimit()
+    .then((rl) => {
+      const limiter = new RateLimit(5, 5 * utils.wait(rl))
+      return fetchUsers(query, cache)
+        .then((users) => Promise.all(users.map((user) => limiter().then(() => fetchMembers(user)))))
+    })
 }

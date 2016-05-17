@@ -47,6 +47,13 @@ const cli = meow([
   string: ['cache', 'location']
 })
 
+var running = true
+
+function isDone (wait) {
+  if (typeof wait !== 'number') { wait = 100 }
+  setTimeout(() => { if (running) { isDone(wait) } }, wait)
+}
+
 var query = {
   o: { string: cli.input.join(' ') },
   order: 'asc',
@@ -60,7 +67,11 @@ const cache = cli.flags.cache ? require('./' + cli.flags.cache) : {}
 fetchMembers(query, cache)
   .then((ack) => {
     console.log(JSON.stringify(ack, null, ' '))
+    running = false
   })
   .catch((e) => {
     console.log('err:', e)
+    running = false
   })
+
+isDone()
