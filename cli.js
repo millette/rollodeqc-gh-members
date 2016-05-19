@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-0 > 1 // see https://github.com/babel/babel-eslint/issues/163
+
 /*
 Fetch members of a github organisation.
 
