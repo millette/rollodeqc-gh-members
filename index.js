@@ -56,3 +56,14 @@ module.exports = function (query, cache) {
         .then((users) => Promise.all(users.map((user) => limiter().then(() => fetchMembers(user)))))
     })
 }
+
+module.exports.orgMembers = (org) => {
+  return ghGot(`orgs/${org}/public_members`).then((mm) => {
+    if (mm.body.length) {
+      return mm.body
+        .map((u) => utils.chosenFields(u))
+        .map((u) => omitBy(u, (v, k) => !v || k === 'type'))
+    }
+    return []
+  })
+}
