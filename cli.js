@@ -25,6 +25,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 'use strict'
 const meow = require('meow')
 const fetchMembers = require('./')
+const updateNotifier = require('update-notifier')
+
+updateNotifier({ pkg: require('./package.json') }).notify()
 
 const cli = meow([
   'Usage',
