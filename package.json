@@ -1,6 +1,6 @@
 {
   "name": "rollodeqc-gh-members",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Fetch members of a github organisation.",
   "license": "AGPL-3.0",
   "repository": "millette/rollodeqc-gh-members",
