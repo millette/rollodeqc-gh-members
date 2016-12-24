@@ -3292,26 +3292,26 @@ rollodeqc-gh-search-users@^0.2.3:
     lodash.uniq "^4.5.0"
     rollodeqc-gh-utils "^0.3.4"
 
-rollodeqc-gh-user@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/rollodeqc-gh-user/-/rollodeqc-gh-user-0.2.1.tgz#0720b0fa808f71fe6d4e0bcfcb0c7cad2c977d9c"
+rollodeqc-gh-user@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/rollodeqc-gh-user/-/rollodeqc-gh-user-0.3.0.tgz#9084e7a8887cc2d23bf702df152fdabdc2030a49"
   dependencies:
     gh-got "^5.0.0"
     lodash.omitby "^4.6.0"
     meow "^3.7.0"
     rate-limit-promise "^1.0.2"
     rollodeqc-gh-utils "^0.3.4"
-    update-notifier "^1.0.2"
+    update-notifier "^1.0.3"
 
-rollodeqc-gh-users@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/rollodeqc-gh-users/-/rollodeqc-gh-users-0.5.0.tgz#90143c551399dc966b68b7fef7161b6e811d9244"
+rollodeqc-gh-users@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/rollodeqc-gh-users/-/rollodeqc-gh-users-0.6.0.tgz#f83fe829b5e54ab6cc28e2927d4c32d105851458"
   dependencies:
     meow "^3.7.0"
     rollodeqc-gh-search-users-all "^0.5.2"
-    rollodeqc-gh-user "^0.2.1"
+    rollodeqc-gh-user "^0.3.0"
     rollodeqc-gh-utils "^0.3.4"
-    update-notifier "^1.0.2"
+    update-notifier "^1.0.3"
 
 rollodeqc-gh-utils@^0.3.1, rollodeqc-gh-utils@^0.3.4:
   version "0.3.4"
