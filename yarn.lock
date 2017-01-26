@@ -1765,12 +1765,6 @@ gh-got@^2.0.0:
     object-assign "^4.0.1"
     pinkie-promise "^2.0.0"
 
-gh-got@^4.0.0:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/gh-got/-/gh-got-4.0.1.tgz#5ff977ab7357f5ff72ff4d8e00821e5c6a524d9b"
-  dependencies:
-    got "^6.2.0"
-
 gh-got@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/gh-got/-/gh-got-5.0.0.tgz#ee95be37106fd8748a96f8d1db4baea89e1bfa8a"
@@ -2207,13 +2201,9 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
-istanbul-lib-coverage@^1.0.0, istanbul-lib-coverage@^1.0.1:
+istanbul-lib-coverage@^1.0.0, istanbul-lib-coverage@^1.0.0-alpha, istanbul-lib-coverage@^1.0.0-alpha.0, istanbul-lib-coverage@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/istanbul-lib-coverage/-/istanbul-lib-coverage-1.0.1.tgz#f263efb519c051c5f1f3343034fc40e7b43ff212"
-
-istanbul-lib-coverage@^1.0.0-alpha, istanbul-lib-coverage@^1.0.0-alpha.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/istanbul-lib-coverage/-/istanbul-lib-coverage-1.0.0.tgz#c3f9b6d226da12424064cce87fce0fb57fdfa7a2"
 
 istanbul-lib-hook@^1.0.0:
   version "1.0.0"
@@ -2390,7 +2380,7 @@ lodash.deburr@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/lodash.deburr/-/lodash.deburr-4.1.0.tgz#ddb1bbb3ef07458c0177ba07de14422cb033ff9b"
 
-lodash.defaults@^4.0.1:
+lodash.defaults@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/lodash.defaults/-/lodash.defaults-4.2.0.tgz#d09178716ffea4dde9e5fb7b37f6f0802274580c"
 
@@ -3268,24 +3258,24 @@ rimraf@2, rimraf@^2.2.8, rimraf@^2.3.3, rimraf@^2.4.3, rimraf@^2.4.4, rimraf@^2.
   dependencies:
     glob "^7.0.5"
 
-rollodeqc-gh-bookworm@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/rollodeqc-gh-bookworm/-/rollodeqc-gh-bookworm-0.3.1.tgz#88dab21dda2e6a3c0adc08b64783034c43acdc05"
+rollodeqc-gh-bookworm@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/rollodeqc-gh-bookworm/-/rollodeqc-gh-bookworm-0.4.0.tgz#4d49148ba6c39e7629859c44e0e739b9adbd4e69"
   dependencies:
-    gh-got "^4.0.0"
-    lodash.defaults "^4.0.1"
-    rollodeqc-gh-utils "^0.3.1"
+    gh-got "^5.0.0"
+    lodash.defaults "^4.2.0"
+    rollodeqc-gh-utils "^0.3.4"
 
-rollodeqc-gh-search-users-all@^0.5.2:
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/rollodeqc-gh-search-users-all/-/rollodeqc-gh-search-users-all-0.5.2.tgz#e58458548e7acef04aec0fc42c900499767f1e7c"
+rollodeqc-gh-search-users-all@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/rollodeqc-gh-search-users-all/-/rollodeqc-gh-search-users-all-0.5.3.tgz#49bf76f0b94c9cbb5eb801d9d8fd17bcab266c41"
   dependencies:
     gh-user "^2.2.0"
     lodash.sorteduniqby "^4.7.0"
     meow "^3.7.0"
-    rollodeqc-gh-bookworm "^0.3.1"
+    rollodeqc-gh-bookworm "^0.4.0"
     rollodeqc-gh-search-users "^0.2.3"
-    update-notifier "^1.0.2"
+    update-notifier "^1.0.3"
 
 rollodeqc-gh-search-users@^0.2.3:
   version "0.2.3"
@@ -3309,17 +3299,17 @@ rollodeqc-gh-user@^0.3.0:
     rollodeqc-gh-utils "^0.3.4"
     update-notifier "^1.0.3"
 
-rollodeqc-gh-users@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/rollodeqc-gh-users/-/rollodeqc-gh-users-0.6.0.tgz#f83fe829b5e54ab6cc28e2927d4c32d105851458"
+rollodeqc-gh-users@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/rollodeqc-gh-users/-/rollodeqc-gh-users-0.6.1.tgz#4016fa507ddc653b47d91c841e87db904496935c"
   dependencies:
     meow "^3.7.0"
-    rollodeqc-gh-search-users-all "^0.5.2"
+    rollodeqc-gh-search-users-all "^0.5.3"
     rollodeqc-gh-user "^0.3.0"
     rollodeqc-gh-utils "^0.3.4"
     update-notifier "^1.0.3"
 
-rollodeqc-gh-utils@^0.3.1, rollodeqc-gh-utils@^0.3.4:
+rollodeqc-gh-utils@^0.3.4:
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/rollodeqc-gh-utils/-/rollodeqc-gh-utils-0.3.4.tgz#b11bdc06a4d4ad7d5936fd6125f2f34e20bfbf43"
   dependencies:
@@ -3731,7 +3721,7 @@ unzip-response@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/unzip-response/-/unzip-response-2.0.1.tgz#d2f0f737d16b0615e72a6935ed04214572d56f97"
 
-update-notifier@^1.0.0, update-notifier@^1.0.2, update-notifier@^1.0.3:
+update-notifier@^1.0.0, update-notifier@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/update-notifier/-/update-notifier-1.0.3.tgz#8f92c515482bd6831b7c93013e70f87552c7cf5a"
   dependencies:
