@@ -29,23 +29,23 @@ const updateNotifier = require('update-notifier')
 
 updateNotifier({ pkg: require('./package.json') }).notify()
 
-const cli = meow([
-  'Usage',
-  '  $ rollodeqc-gh-members [input]',
-  '',
-  'Options',
-  '  -l',
-  '  --location Search location; supply as many times as needed.',
-  '',
-  '  -c',
-  '  --cache JSON file holding cached values.',
-  '',
-  'Examples',
-  '  $ rollodeqc-gh-members',
-  '  unicorns & rainbows',
-  '  $ rollodeqc-gh-members ponies',
-  '  ponies & rainbows'
-], {
+const cli = meow(`
+  Usage
+    $ rollodeqc-gh-members [input]
+  
+  Options
+    -l
+    --location Search location; supply as many times as needed.
+  
+    -c
+    --cache JSON file holding cached values.
+  
+  Examples
+    $ rollodeqc-gh-members
+    unicorns & rainbows
+    $ rollodeqc-gh-members ponies
+    ponies & rainbow
+`, {
   alias: { c: 'cache', l: 'location' },
   string: ['cache', 'location']
 })
